@@ -1,0 +1,33 @@
+{
+    "name": "lewiatan/rbac",
+    "description": "Simple Role Based Access Control (RBAC) package for Laravel4",
+    "authors": [
+        {
+            "name": "Maciej Niepiekło",
+            "email": "lewiatan.hpc@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "illuminate/database": "5.0.4",
+        "illuminate/auth": "5.0.4",
+        "symfony/var-dumper": "2.6.4"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/models",
+            "src/interfaces",
+            "src/traits",
+            "src/collections",
+            "src/exceptions"
+        ],
+        "psr-0": {
+            "Lewiatan\\Rbac\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
