@@ -1,6 +1,6 @@
 {
     "name": "lewiatan/rbac",
-    "description": "Simple Role Based Access Control (RBAC) package for Laravel4",
+    "description": "Simple Role Based Access Control (RBAC) package for Laravel 5",
     "authors": [
         {
             "name": "Maciej Niepiekło",
