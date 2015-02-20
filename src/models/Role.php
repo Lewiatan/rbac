@@ -9,8 +9,6 @@ class Role extends Model implements RbacRoleInterface {
 
     protected $fillable = [];
 
-//    protected $with = ['permissions'];
-
     protected $permissionsLoaded = false;
     protected $permissionsArray = [];
     
@@ -18,7 +16,7 @@ class Role extends Model implements RbacRoleInterface {
 
     private $permissionModel;
 
-    public function __construct(Permission $permissionModel = null) {
+    public function __construct(array $attributes = [], Permission $permissionModel = null) {
         if ($permissionModel) {
             $this->permissionModel = $permissionModel;
         } else {

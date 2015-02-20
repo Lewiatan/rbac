@@ -12,7 +12,7 @@ class RoleModelTest extends PHPUnit_Framework_TestCase {
         $this->user = Mockery::mock('Lewiatan\Rbac\Models\User');
         $this->rolesCollection = Mockery::mock('Lewiatan\Rbac\Collections\RolesCollection');
 
-        $this->role = Mockery::mock('Lewiatan\Rbac\Models\Role[permissions]', [$this->permission]);
+        $this->role = Mockery::mock('Lewiatan\Rbac\Models\Role[permissions]', [[], $this->permission]);
         $this->role->shouldReceive('permissions')->andReturn($this->permission);
         $this->role->users = $this->user;
         $this->role->permissions = $this->permission;
