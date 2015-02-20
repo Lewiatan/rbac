@@ -18,6 +18,7 @@
     },
     "autoload": {
         "classmap": [
+            "src/middleware",
             "src/migrations",
             "src/models",
             "src/interfaces",
