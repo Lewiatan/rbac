@@ -4,7 +4,7 @@ use Illuminate\Support\ServiceProvider;
 
 class RbacServiceProvider extends ServiceProvider {
 
-	const CONFIG = '/../config/rbac.php';
+	const CONFIG = '/config/rbac.php';
 
 	/**
 	 * Indicates if loading of the provider is deferred.
