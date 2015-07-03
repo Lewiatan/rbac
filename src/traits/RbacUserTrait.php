@@ -13,15 +13,26 @@ trait RbacUserTrait {
         return $this->roles->hasPermission($permission_id);
     }
 
+    public function is($role) {
+        return $this->hasRole($role);
+    }
+
     public function assignRole($role) {
-        $this->roles->attach($role);
+        $this->roles()->attach($role);
 
         return $this;
     }
 
     public function removeRole($role) {
-        $this->roles->dettach($role);
+        $this->roles()->detach($role);
 
         return $this;
+    }
+
+    /**
+     * @param $role
+     */
+    protected function hasRole($role) {
+        return $this->roles->has($role);
     }
 }

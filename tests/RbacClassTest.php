@@ -10,9 +10,6 @@ class RbacClassTest extends PHPUnit_Framework_TestCase {
 
     private $role;
 
-    /**
-     *
-     */
     public function setUp() {
         $this->user = Mockery::mock('Lewiatan\Rbac\Interfaces\RbacUserInterface');
         $this->role = Mockery::mock('Lewiatan\Rbac\Interfaces\RbacRoleInterface');

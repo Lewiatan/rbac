@@ -7,7 +7,9 @@ use Lewiatan\Rbac\Interfaces\string;
 
 class Role extends Model implements RbacRoleInterface {
 
-    protected $fillable = [];
+    protected $guarded = ['id'];
+
+    protected $with = ['permissions'];
 
     protected $permissionsLoaded = false;
     protected $permissionsArray = [];

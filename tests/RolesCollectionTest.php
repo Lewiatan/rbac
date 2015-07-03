@@ -4,11 +4,7 @@ use Lewiatan\Rbac\Collections\RolesCollection;
 
 class RolesCollectionTest extends PHPUnit_Framework_TestCase {
 
-    private $adminRole;
-    private $writerRole;
-    private $collection;
-
-    public function setUp() {
+   public function setUp() {
         $this->adminRole = Mockery::mock('Lewiatan\Rbac\Models\Role');
 
         $this->writerRole = Mockery::mock('Lewiatan\Rbac\Models\Role');
