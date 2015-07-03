@@ -17,9 +17,6 @@
         "symfony/var-dumper": "2.6.4"
     },
     "autoload": {
-        "classmap" : [
-            "exceptions"
-        ],
         "psr-4": {
             "Lewiatan\\Rbac\\": "src/"
         }
